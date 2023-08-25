@@ -12,6 +12,12 @@
 		871D0F1C2A97D0A30097D6F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 871D0F1A2A97D0A30097D6F1 /* Main.storyboard */; };
 		871D0F1E2A97D0A40097D6F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 871D0F1D2A97D0A40097D6F1 /* Assets.xcassets */; };
 		871D0F212A97D0A40097D6F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 871D0F1F2A97D0A40097D6F1 /* LaunchScreen.storyboard */; };
+		871D0F3C2A97DF240097D6F1 /* MovieInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 871D0F3B2A97DF240097D6F1 /* MovieInfo.plist */; };
+		871D0F3E2A97DFC30097D6F1 /* HideApiKey++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D0F3D2A97DFC30097D6F1 /* HideApiKey++Bundle.swift */; };
+		871D0F402A98D8A00097D6F1 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D0F3F2A98D8A00097D6F1 /* StoryboardInstantiable.swift */; };
+		871D0F432A98D9F90097D6F1 /* MovieRankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D0F422A98D9F90097D6F1 /* MovieRankingViewController.swift */; };
+		871D0F472A98E0E00097D6F1 /* MovieDiscover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D0F462A98E0E00097D6F1 /* MovieDiscover.swift */; };
+		871D0F492A98E2DF0097D6F1 /* MovieResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871D0F482A98E2DF0097D6F1 /* MovieResponseDTO+Mapping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		871D0F1D2A97D0A40097D6F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		871D0F202A97D0A40097D6F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		871D0F222A97D0A40097D6F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		871D0F3B2A97DF240097D6F1 /* MovieInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MovieInfo.plist; sourceTree = "<group>"; };
+		871D0F3D2A97DFC30097D6F1 /* HideApiKey++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HideApiKey++Bundle.swift"; sourceTree = "<group>"; };
+		871D0F3F2A98D8A00097D6F1 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		871D0F422A98D9F90097D6F1 /* MovieRankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRankingViewController.swift; sourceTree = "<group>"; };
+		871D0F462A98E0E00097D6F1 /* MovieDiscover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDiscover.swift; sourceTree = "<group>"; };
+		871D0F482A98E2DF0097D6F1 /* MovieResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				871D0F132A97D0A30097D6F1 /* CleanArchitecture_byTMDb */,
-				871D0F1A2A97D0A30097D6F1 /* Main.storyboard */,
 				871D0F122A97D0A30097D6F1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +89,7 @@
 		871D0F292A97D2A40097D6F1 /* DIContainer */ = {
 			isa = PBXGroup;
 			children = (
+				871D0F3D2A97DFC30097D6F1 /* HideApiKey++Bundle.swift */,
 			);
 			path = DIContainer;
 			sourceTree = "<group>";
@@ -94,8 +106,8 @@
 		871D0F2B2A97D2FA0097D6F1 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				871D0F342A97D6A10097D6F1 /* UseCases */,
 				871D0F332A97D6950097D6F1 /* Entities */,
+				871D0F342A97D6A10097D6F1 /* UseCases */,
 				871D0F352A97D6B60097D6F1 /* Interfaces */,
 			);
 			path = Domain;
@@ -122,6 +134,7 @@
 				871D0F222A97D0A40097D6F1 /* Info.plist */,
 				871D0F1D2A97D0A40097D6F1 /* Assets.xcassets */,
 				871D0F1F2A97D0A40097D6F1 /* LaunchScreen.storyboard */,
+				871D0F3B2A97DF240097D6F1 /* MovieInfo.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -129,6 +142,7 @@
 		871D0F2F2A97D52A0097D6F1 /* MovieScenes */ = {
 			isa = PBXGroup;
 			children = (
+				871D0F412A98D9D70097D6F1 /* MovieRanking */,
 			);
 			path = MovieScenes;
 			sourceTree = "<group>";
@@ -152,6 +166,7 @@
 		871D0F322A97D6760097D6F1 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				871D0F3F2A98D8A00097D6F1 /* StoryboardInstantiable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -159,6 +174,7 @@
 		871D0F332A97D6950097D6F1 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				871D0F462A98E0E00097D6F1 /* MovieDiscover.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -196,8 +212,34 @@
 		871D0F382A97D8050097D6F1 /* DataMapping */ = {
 			isa = PBXGroup;
 			children = (
+				871D0F482A98E2DF0097D6F1 /* MovieResponseDTO+Mapping.swift */,
 			);
 			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		871D0F412A98D9D70097D6F1 /* MovieRanking */ = {
+			isa = PBXGroup;
+			children = (
+				871D0F1A2A97D0A30097D6F1 /* Main.storyboard */,
+				871D0F442A98DA0E0097D6F1 /* View */,
+				871D0F452A98DA200097D6F1 /* ViewModel */,
+			);
+			path = MovieRanking;
+			sourceTree = "<group>";
+		};
+		871D0F442A98DA0E0097D6F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				871D0F422A98D9F90097D6F1 /* MovieRankingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		871D0F452A98DA200097D6F1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				871D0F212A97D0A40097D6F1 /* LaunchScreen.storyboard in Resources */,
+				871D0F3C2A97DF240097D6F1 /* MovieInfo.plist in Resources */,
 				871D0F1E2A97D0A40097D6F1 /* Assets.xcassets in Resources */,
 				871D0F1C2A97D0A30097D6F1 /* Main.storyboard in Resources */,
 			);
@@ -273,6 +316,11 @@
 			files = (
 				871D0F152A97D0A30097D6F1 /* AppDelegate.swift in Sources */,
 				871D0F172A97D0A30097D6F1 /* SceneDelegate.swift in Sources */,
+				871D0F492A98E2DF0097D6F1 /* MovieResponseDTO+Mapping.swift in Sources */,
+				871D0F402A98D8A00097D6F1 /* StoryboardInstantiable.swift in Sources */,
+				871D0F472A98E0E00097D6F1 /* MovieDiscover.swift in Sources */,
+				871D0F432A98D9F90097D6F1 /* MovieRankingViewController.swift in Sources */,
+				871D0F3E2A97DFC30097D6F1 /* HideApiKey++Bundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +469,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2P5FNS3JAJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CleanArchitecture_byTMDb/Info.plist;
+				INFOPLIST_FILE = CleanArchitecture_byTMDb/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -449,7 +497,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2P5FNS3JAJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CleanArchitecture_byTMDb/Info.plist;
+				INFOPLIST_FILE = CleanArchitecture_byTMDb/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
