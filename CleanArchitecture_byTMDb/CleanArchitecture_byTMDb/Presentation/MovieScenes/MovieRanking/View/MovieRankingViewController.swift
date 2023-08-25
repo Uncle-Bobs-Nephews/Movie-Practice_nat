@@ -64,18 +64,6 @@ class MovieRankingViewController: UIViewController {
 		
 	}
 	
-	override func viewDidAppear(_ animated: Bool) {
-//        if UserDefaults.standard.string(forKey: "nickname") == nil{
-//            if let loginVC = UIStoryboard(name:"Home",bundle: nil).instantiateViewController(withIdentifier: "Login") as? LoginViewController {
-//                loginVC.modalPresentationStyle = .fullScreen
-//                self.present(loginVC, animated: true)
-//            }
-//            self.tabBarController?.selectedIndex = 0
-//        }
-//        getMovie()
-	}
-	
-	
 	func getMovie(){
 		let endPoint = "https://api.themoviedb.org/3/movie/now_playing?page="
 		let apiKey = Bundle.main.apiKey

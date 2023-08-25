@@ -8,7 +8,6 @@
 import Foundation
 
 struct MovieDiscoverOrigin {
-		
 		let id: Int
 		let originalLanguage: String
 		let originalTitle: String
