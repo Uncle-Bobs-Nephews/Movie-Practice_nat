@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+struct MovieDiscoverOrigin {
+		
+		let id: Int
+		let originalLanguage: String
+		let originalTitle: String
+		let overview: String?
+		let popularity: Double?
+		let posterPath: String?
+		let releaseDate: Date?
+		let title: String?
+		let video: Bool?
+		let voteAverage: Double?
+		let voteCount: Int?
+}

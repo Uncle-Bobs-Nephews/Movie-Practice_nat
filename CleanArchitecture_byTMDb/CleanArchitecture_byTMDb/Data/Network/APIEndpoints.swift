@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+//struct APIEndpoints {
+//	static func getMovies() -> Endpoint<MoviesResponseDTO> {
+//		return Endpoint(
+//	}
+//}
