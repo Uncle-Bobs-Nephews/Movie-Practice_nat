@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct MoviesResponseDTO: Decodable {
+struct MoviesDiscoverResponseDTO: Decodable {
 	let page: Int
 	let totalPages: Int
 	let totalResults: Int
-	let movieDTO: [MovieDTO]
+	let movieDTO: [MovieDiscoverDTO]
 	
 	private enum CodingKeys: String, CodingKey {
 		case page
@@ -21,8 +21,8 @@ struct MoviesResponseDTO: Decodable {
 	}
 }
 
-extension MoviesResponseDTO {
-	struct MovieDTO: Decodable {
+extension MoviesDiscoverResponseDTO {
+	struct MovieDiscoverDTO: Decodable {
 		private enum CodingKeys: String, CodingKey {
 			case adult
 			case backdropPath = "backdrop_path"
@@ -57,13 +57,13 @@ extension MoviesResponseDTO {
 	}
 }
 
-extension MoviesResponseDTO {
+extension MoviesDiscoverResponseDTO {
 	func toDomain() -> MoviesPage {
-		return .init(page: page, totalPages: totalPages, totalResults: totalResults, movieDTO:movieDTO.map { $0.toDomain() })
+		return .init(page: page, totalPages: totalPages, totalResults: totalResults, movieDTO:MovieDiscoverDTO.map { $0.toDomain() })
 	}
 }
 
-extension MoviesResponseDTO.MovieDTO {
+extension MoviesDiscoverResponseDTO.MovieDiscoverDTO {
 	func toDomain() -> MovieDiscover {
 		return .init(id: MovieDiscover.Identifier(id), overview: overview, posterPath: posterPath, releaseDate: dateFormatter.date(from: releaseDate ?? ""), title: title, voteAverage: voteAverage)
 	}

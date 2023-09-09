@@ -19,7 +19,7 @@ struct MovieDiscover: Equatable, Identifiable {
 
 }
 
-struct MoviesPage: Equatable {
+struct MoviesDiscoverPage: Equatable {
 	let page: Int
 	let totalPages: Int
 	let totalResults: Int
