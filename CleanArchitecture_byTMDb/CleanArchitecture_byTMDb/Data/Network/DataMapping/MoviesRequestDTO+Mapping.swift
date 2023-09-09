@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MoviesRequestDTO: Equatable {
+struct MoviesRequestDTO: Encodable {
 	let query: String
 	let page: Int
 }

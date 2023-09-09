@@ -12,13 +12,15 @@ struct APIEndpoints {
 		return Endpoint(
 			 path: "3/search/movie",
 			 method: .get,
-			 queryParametersEncodable: moviesRequestDTO)
+			 queryParametersEncodable: moviesRequestDTO
+		)
 	}
 	
 	static func getMoviePoster(path: String, width: Int) -> Endpoint<Data> {
 		let sizes = [92, 154, 185, 342, 500, 780]
 		let closestWidth = sizes
 			.enumerated()
+		//`abs()` Returns the absolute value of the given number.
 			.min { abs($0.1 - width) < abs($1.1 - width) }?
 			.element ?? sizes.first!
 		

@@ -7,11 +7,12 @@
 
 import Foundation
 
+/*
 struct MoviesDiscoverResponseDTO: Decodable {
 	let page: Int
 	let totalPages: Int
 	let totalResults: Int
-	let movieDTO: [MovieDiscoverDTO]
+	let movies: [MovieDiscoverDTO]
 	
 	private enum CodingKeys: String, CodingKey {
 		case page
@@ -59,7 +60,7 @@ extension MoviesDiscoverResponseDTO {
 
 extension MoviesDiscoverResponseDTO {
 	func toDomain() -> MoviesPage {
-		return .init(page: page, totalPages: totalPages, totalResults: totalResults, movieDTO:MovieDiscoverDTO.map { $0.toDomain() })
+		return .init(page: page, totalPages: totalPages, movies: movies.map { $0.genre?.toDomain() })
 	}
 }
 
@@ -77,3 +78,4 @@ private let dateFormatter: DateFormatter = {
 	formatter.locale = Locale(identifier: "en_US_POSIX")
 	return formatter
 }()
+*/

@@ -80,7 +80,7 @@ final class DefaultNetworkService {
 	}
 	
 	private func resolve(error: Error) -> NetworkError {
-		let code = URLError.Code(rawValue: error as NSError).code)
+		let code = URLError.Code(rawValue: (error as NSError).code)
 		switch code {
 		case .notConnectedToInternet: return .notConnected
 		case .cancelled: return .cancelled
